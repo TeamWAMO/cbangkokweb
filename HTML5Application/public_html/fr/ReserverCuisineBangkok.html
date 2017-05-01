@@ -1,0 +1,139 @@
+﻿<!doctype html>
+<html lang="fr-CA">
+<!-- Prepared by Miguel Legault 8547102 -->
+<!-- Extended Oleksii Redko-->
+
+<head>
+<meta charset="utf-8">
+<title>R&eacute;servation de table | Cuisine Bangkok</title>
+<link href="../css/cuisine_bangkok_common.css" rel="stylesheet" type="text/css">
+<meta name="description" content="Réservation de table | restorant cusine Bangkok." />
+
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo">CUISINE BANGKOK </h4>
+  </a>
+    <nav>
+      <ul>
+		<li><a href="AccueilCuisineBangkok.html">ACCUEIL</a></li>
+         <li><a href="MenuCuisineThai.html">MENU</a></li>
+         <li><a href="TypiquementThaiCuisineBangkok.html">TYPIQUEMENT THAI</a></li>
+         <li><a href="#">RÉSERVER</a></li>
+         <li><a href="AProposCuisineBangkok.html">À PROPOS DE NOUS</a></li>
+         <li><a href="#footer">CONTACT</a></li>
+       <li><a href="../CuisineBangkokReserve.html"><span lang="en-CA">ENGLISH</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+            <div class="logo-center"><img src="../images/Logo_v2_reverse_Cuisine_Bangkok_Ste-Catherine_Montreal_No_Tage.svg" alt="Cuisine Bangkok Logo" title="Cuisine Bangkok Logo" width="432" height="163" class="logo-center"></div>
+            <h2 class="hero_header">CUISINE <span class="light">BANGKOK</span></h2>
+            <p class="tagline">CUISINE THAI AUTHENTIQUE</p>
+        </section>
+  <!-- Main content section -->
+    <main style="text-align:center;">
+	<h2>R&eacute;servation de table</h2>
+        <form name="table_reservation_form" id="table_reservation_form" method="post"   action="ReservationRecueCuisineBangkok.html" autocomplete="on">
+           
+                <fieldset id="resrvationInfo" name="resrvationInfo" style=" margin:auto; background-color:#d57e52; border:none; width:500px; hight:300px;" >
+                    <legend style="background-color:#ffffff">Informations sur la r&eacute;servation</legend>
+                    <table style="margin:auto;">
+                        <tr>
+                            <td class="rightAlign"><label for="resDate" >Date de r&eacute;servation&colon;&ast;</label></td>
+                            <td class="leftAlign"><input type="date" id="resDate" name="resDate" style="width:130px" placeholder="mm/dd/yyyy" required="required" /></td>
+                        </tr>
+                        <tr>
+                            <td class="rightAlign"><label for="resTime">L&apos;heure de r&eacute;sevation&colon;&ast;</label></td>
+                            <td class="leftAlign"><input type="time" id="resTime" name="resTime" style="width:130px" required="required" placeholder="6:00 PM" value="18:00"/></td>
+                        </tr>
+                        <tr>
+                            <td class="rightAlign"><label for="adults"> Nombre de personnes&colon;&ast; </label></td>
+                            <td class="leftAlign">
+                                <label for="adults">Adultes&colon;</label>
+                                <input style="width:35px;" type="number" id="adults" name="adults" min="1" max="6" value="1" required="required" />
+                                <label for="childrens">Enfants&colon;</label>
+                                <input style="width:35px;" type="number" id="childrens" name="childrens" value="0" max="3" />
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>	<br/>
+			<fieldset id="contactInfo" name="contactInfo" style="margin:auto; background-color:#b3b3b3; border:none; width:500px;">
+            <legend style="background-color:#ffffff">Informations de contact</legend>
+				<table style="margin:auto;">
+					<tr>
+						<td class="rightAlign"> <label for="name">Nom&colon;&ast;</label></td>
+						<td class="leftAlign"> <input type="text" id="name" name="name" required="required" /></td>
+					</tr>
+					<tr>
+						<td class="rightAlign"> <label for="phoneNumber">Num&eacute;ro de t&eacute;l&eacute;phone&colon;&ast;</label></td>
+						<td class="leftAlign"><input type="tel" id="phoneNumber" name="phoneNumber" placeholder="555-555-5555" pattern="^\d{3}-\d{3}-\d{4}$" required="required" /></td>
+					</tr>
+					<tr>
+						<td class="rightAlign">   <label for="email" style="font-style:bold;">Courriel&colon;&ast;</label></td>
+						<td class="leftAlign"> <input type="email" id="email" name="email" placeholder="myemail@example.com" required="required" /></td>
+												
+					</tr>
+				</table>
+			 </fieldset>
+			 <p style="text-align:center; font-weight:bold; color:red;"> &ast;- Doit &ecirc;tre rempli </p>
+			<div style=" padding:10px; text-align:center;">
+				<input type="submit" id="submit" name="submit" class="button"  value="réserver" />
+				<input  type="reset" id="reset" name="reset" class="button" value="recommencer" />
+			</div>
+        </form>
+    </main>
+
+  <!-- Parallax Section -->
+  <section class="banner">
+    <h2 class="parallax">THAILANDE PROVERB</h2>
+    <p class="parallax_description">Trouver un ami pour un repas est facile&semi;<br />Trouver un ami pour la vie est difficile.</p>
+  </section>
+  <!-- More Info Section -->
+  <footer id="footer">
+     <article class="footer_column">
+                <h3>HEURES</h3>
+                <p>
+                    Vendredi 11:30AM–10PM<br />
+                    Samedi 11:30AM–10PM<br />
+                    Dimanche 5–9PM<br />
+                    Lundi 11:30AM–10PM<br />
+                    Mardi 11:30AM–10PM<br />
+                    Mercredi 11:30AM–10PM<br />
+                    Jeudi 11:30AM–10PM
+                </p>
+            </article>
+            <article class="footer_column">
+                <h3>PLAN DE SITE</h3>
+                <p>
+                    <a href="PlanDeSite.html">Plan de Site</a>
+                </p>
+            </article>
+            <article class="footer_column">
+                <h3>EMPLACEMENT</h3>
+                <address>1327 Ste-Catherine E<br />Montréal, QC<br />H2L 2H4<br />Canada</address>
+                <p>Téléphone: 514 935-2178</p>
+            </article>
+
+            <article class="footer_column">
+                <h3>J'AIME</h3>
+                <p><a href="https://www.facebook.com/Cuisine-Bangkok-125773131698/" title="J'aime sur Facebook'">J'aime sur Facebook<br /><img src="../images/FacebookIcon.png" alt="Facebook Icon" title="Facebook Icon" height="25" width="25" /></a></p>
+            </article>
+
+  </footer>
+ 
+  
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2017 - <strong>&Eacute;quipe WAMO</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
